@@ -1,0 +1,123 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+html, body {
+  width: 96%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  background-color: #3d3d3d; }
+
+header {
+  width: 100%;
+  height: 60px;
+  border-top: 5px solid #3d3d3d;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  header .logo {
+    width: 30%;
+    background-color: #3d3d3d;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 0 10px; }
+  header .tagline {
+    width: 40%;
+    background-color: #3d3d3d;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 0 10px; }
+  header .return {
+    width: 30%;
+    background-color: #3d3d3d;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 0 10px; }
+
+section {
+  width: 100%;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column; }
+  section .blockOne {
+    background-color: #3d3d3d; }
+    section .blockOne .subBlock1 {
+      border-top: 5px solid #3d3d3d;
+      padding: 20px;
+      text-align: center;
+      background-color: #ccc; }
+    section .blockOne .subBlock2 {
+      padding: 10px;
+      text-align: center;
+      border-top: 5px solid #3d3d3d;
+      background-color: #ccc; }
+  section .blockTwo {
+    display: flex;
+    flex-direction: row; }
+    section .blockTwo .subBlockTrack {
+      border-top: 5px solid #3d3d3d;
+      border-right: 5px solid #3d3d3d;
+      background-color: #ccc;
+      width: 200px; }
+      section .blockTwo .subBlockTrack ul {
+        margin: 10px;
+        background-color: #3d3d3d; }
+        section .blockTwo .subBlockTrack ul li {
+          padding: 10px 20px;
+          text-align: center;
+          border: 1px solid #ccc;
+          color: #ccc; }
+    section .blockTwo .subBlockList {
+      border-top: 5px solid #3d3d3d;
+      background-color: #ccc;
+      width: calc(100% - 195px); }
+      section .blockTwo .subBlockList ul {
+        margin: 10px;
+        background-color: #ссс; }
+        section .blockTwo .subBlockList ul li {
+          margin: 5px;
+          padding: 10px 20px;
+          background-color: #3d3d3d;
+          color: #ccc; }
+
+.chart {
+  border-top: 5px solid #3d3d3d;
+  width: 100%;
+  height: 220px; }
+  .chart span {
+    text-align: center;
+    display: block;
+    padding-top: 10px; }
+  .chart:hover .chart2 {
+    display: block; }
+  .chart .chart2 {
+    width: 96%;
+    height: 150px;
+    margin: 10px auto 0px auto;
+    background-color: #3d3d3d;
+    transition: 0.5s all;
+    display: none; }
+    .chart .chart2 ul li {
+      background-color: #ccc;
+      margin: 5px;
+      padding: 5px; }
+
+footer {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=main.css.map */
