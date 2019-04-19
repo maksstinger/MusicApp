@@ -219,8 +219,12 @@ input[type="submit"]:hover {
   height: 300%;
   background: #660099;
   background: -webkit-linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2);
+
   background: -moz-linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2);
   background: linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2);
+=======
+  background: -moz-linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2));
+  background: linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2));
   bottom: -100%;
   left: 0;
   transition: all 0.4s;
