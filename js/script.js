@@ -1,5 +1,6 @@
 let login_link = document.getElementsByClassName("txt-link"),
 	form_in = document.getElementById("form-in"),
+<<<<<<< HEAD
 	form_up = document.getElementById("form-up"),
 	form_in_inputs = document.querySelectorAll('.form_in_input'),
 	form_up_inputs = document.querySelectorAll('.form_up_input'),
@@ -99,4 +100,33 @@ function validate(inputs) {
 		validate = input.value !== '';
 	});
 	return validate;
+=======
+	form_up = document.getElementById("form-up");
+for (let i=0; i < login_link.length; i++) {
+	login_link[i].addEventListener("click", hiden);
+}
+for (let i=0; i < form_in.length; i++) {
+	form_in[i].onblur = function() {
+		if (!event.target.value) {
+			event.target.parentNode.classList.add('alert-validate');
+		}
+	};
+	form_in[i].onfocus = function() {
+		event.target.parentNode.classList.remove('alert-validate');
+	}
+}
+for ( let i=0; i < form_up.length; i++) {
+	form_up[i].onblur = function () {
+		if (!event.target.value) {
+			event.target.parentNode.classList.add('alert-validate');
+		}
+	};
+	form_up[i].onfocus = function () {
+		event.target.parentNode.classList.remove('alert-validate');
+	}
+}
+function hiden() {
+	form_in.style.display = (event.target.textContent.trim() == "Sign up") ? "none" : "";
+	form_up.style.display = (event.target.textContent.trim() == "Sign up") ? "block" : "";
+>>>>>>> 3eafa64003fec6ba6f8fea28915e0d4edf27781f
 }
