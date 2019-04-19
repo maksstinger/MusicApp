@@ -225,7 +225,7 @@ input[type="submit"]:hover {
   left: 0;
   transition: all 0.4s;
 }
-.login-form-btn {
+.login-form-btn, .warn-button {
   padding: 0 20px;
   min-width: 170px;
   height: 40px;

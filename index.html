@@ -74,12 +74,15 @@
 					<div class="login-more"></div>
 					<div class="wrap-login-warn">
 						<form class="login-form validate-form" id="form-in-warn">
-							<span class="login-form-title">WARNING ERROR</span>
+							<span class="login-form-title">ERROR WARNING</span>
 							<div class="wrap-input validate-input" data-validate="Username is required">
-								<span class="label-input">Unable to log in to your account. Verify that the username and password are entered correctly. Or register.</span>
+								<span class="label-input">Unable to sign in to your account. Please enter a correct username and password or register.</span>
 							</div>
 							<div class="container-login-form-btn">
-								<button class="warn-button" onclick="warnToggler()">TRY AGAIN</button>
+								<div class="wrap-login-form-btn">
+									<div class="login-form-bgbtn"></div>
+									<button class="warn-button" onclick="warnToggler()">TRY AGAIN</button>
+								</div>
 							</div>
 						</form>
 					</div>

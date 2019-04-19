@@ -59,7 +59,7 @@ function passwordChecker(event) {
 			hide(event); //переход на авторизацию, но не понятно, прошла ли регистрация успешно, ну так себе вариант)
 		}
 		else {
-			alert('this user exist')
+			alert('Sorry! This user already exists!')
 		}
 	}
 }
