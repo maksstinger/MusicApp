@@ -78,7 +78,7 @@ input[type="submit"]:hover {
 }
 .limiter {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto
 }
 .container-login {
   width: 100%;
@@ -94,14 +94,6 @@ input[type="submit"]:hover {
   border-radius: 2px;
   position: relative;
   padding: 20px 50px;
-}
-.wrap-login-warn {
-  width: 520px;
-  min-height: 100vh;
-  background: #fff;
-  border-radius: 2px;
-  position: relative;
-  padding: 20px 50px 20px 0;
 }
 .login-more {
   background-repeat: no-repeat;
@@ -219,10 +211,6 @@ input[type="submit"]:hover {
   height: 300%;
   background: #660099;
   background: -webkit-linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2);
-
-  background: -moz-linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2);
-  background: linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2);
-=======
   background: -moz-linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2));
   background: linear-gradient(top, #660099, #c77ff2, #330033, #c77ff2));
   bottom: -100%;
@@ -295,10 +283,4 @@ input[type="submit"]:hover {
 }
 .logo {
 
-}
-.submit-disabled {
-  background: #555555!important;
-}
-.warning {
-  display: none;
 }
