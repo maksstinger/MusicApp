@@ -4,7 +4,6 @@
 	<title>Welcome page</title>
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
@@ -15,7 +14,6 @@
 		<div class="wrap-login">
 			<img src="images/MuzzerzLogo.png" alt="Logo">
 			<form class="login-form validate-form" id="form-up">
-				<span class="login-form-title">Sign Up</span>
 				<div class="wrap-input validate-input" data-validate="Name is required">
 					<span class="label-input">Full Name</span>
 					<input id="name" class="input form_up_input" type="text" name="name" placeholder="Enter Your Name">
@@ -50,7 +48,6 @@
 				</div>
 			</form>
 			<form class="login-form validate-form" id="form-in">
-				<span class="login-form-title">Sign In</span>
 				<div class="wrap-input validate-input" data-validate="Username is required">
 					<span class="label-input">Username</span>
 					<input id="user_sign_in" class="input form_in_input" type="text" name="username" placeholder="Enter Your Username">
@@ -71,17 +68,14 @@
 			</form>
 			<div class="warning">
 				<div class="container-login">
-					<div class="login-more"></div>
 					<div class="wrap-login-warn">
 						<form class="login-form validate-form" id="form-in-warn">
-							<span class="login-form-title">ERROR WARNING</span>
-							<div class="wrap-input validate-input" data-validate="Username is required">
-								<span class="label-input">Unable to sign in to your account. Please enter a correct username and password or register.</span>
-							</div>
+							<span class="login-form-title">ERROR WARNING</span>							
+							<span class="label-input">Unable to sign in to your account. Please enter a correct username and password or register.</span>							
 							<div class="container-login-form-btn">
 								<div class="wrap-login-form-btn">
 									<div class="login-form-bgbtn"></div>
-									<button class="warn-button" onclick="warnToggler()">TRY AGAIN</button>
+									<input class="login-form-btn" type="submit" value="Try Again" onclick="warnToggler()"></input>
 								</div>
 							</div>
 						</form>

@@ -21,8 +21,8 @@
 }
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 body, html {
@@ -88,16 +88,16 @@ input[type="submit"]:hover {
   flex-wrap: wrap;
 }
 .wrap-login {
-  width: 520px;
+  width: 420px;
   min-height: 100vh;
   background: #fff;
   border-radius: 2px;
   position: relative;
-  padding: 20px 50px;
+  padding: 0px 50px;
 }
 .wrap-login-warn {
   width: 520px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: #fff;
   border-radius: 2px;
   position: relative;
@@ -107,10 +107,10 @@ input[type="submit"]:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: calc(100% - 520px);
+  width: calc(100% - 420px);
   position: relative;
   z-index: 1;
-  background-image: url('../images/music__life.jpg')
+  background-image: url('../images/music__life.jpg');
 }
 .login-more:before {
   content: "";
@@ -132,9 +132,6 @@ input[type="submit"]:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-.login-form#form-in{
-  margin-top: 70px
-}
 .login-form#form-up {
   display: none;
 }
@@ -142,17 +139,20 @@ input[type="submit"]:hover {
   display: block;
   width: 100%;
   font-family: Poppins-Bold;
-  font-size: 39px;
+  font-size: 30px;
   color: #333333;
   line-height: 1.2;
   text-align: left;
-  padding-bottom: 60px
+  padding-bottom: 40px;
 }
 .wrap-input {
   width: 100%;
   position: relative;
   border-bottom: 2px solid #dbdbdb;
-  margin-bottom: 45px
+  margin-bottom: 20px;
+}
+.login-form-title + .label-input {
+  margin-bottom: 35px
 }
 .label-input {
   font-family: Poppins-SemiBold;
