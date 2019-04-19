@@ -6,89 +6,88 @@
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-	
-	<div class="limiter">
-		<div class="container-login">
-			<div class="login-more"></div>
-
-			<div class="wrap-login">
-				<form class="login-form validate-form" id="form-up">
-					<span class="login-form-title">
-						Sign Up
-					</span>
-
-					<div class="wrap-input validate-input" data-validate="Name is required">
-						<span class="label-input">Full Name</span>
-						<input class="input" type="text" name="name" placeholder="Name...">
-						<span class="focus-input"></span>
+<div class="limiter">
+	<div class="container-login">
+		<div class="login-more"></div>
+		<div class="wrap-login">
+			<img src="images/MuzzerzLogo.png" alt="Logo">
+			<form class="login-form validate-form" id="form-up">
+				<span class="login-form-title">Sign Up</span>
+				<div class="wrap-input validate-input" data-validate="Name is required">
+					<span class="label-input">Full Name</span>
+					<input id="name" class="input form_up_input" type="text" name="name" placeholder="Enter Your Name">
+					<span class="focus-input"></span>
+				</div>
+				<div class="wrap-input validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input">Email</span>
+					<input id="email" class="input form_up_input" type="email" name="email" placeholder="Enter Your Email">
+					<span class="focus-input"></span>
+				</div>
+				<div class="wrap-input validate-input" data-validate="Username is required">
+					<span class="label-input">Username</span>
+					<input id="username" class="input form_up_input" type="text" name="username" placeholder="Enter Your Username">
+					<span class="focus-input"></span>
+				</div>
+				<div class="wrap-input validate-input" data-validate = "Password is required">
+					<span class="label-input">Password</span>
+					<input id="password" class="input form_up_input" type="password" name="pass" placeholder="Enter password">
+					<span class="focus-input"></span>
+				</div>
+				<div class="wrap-input validate-input" data-validate = "Password don't match!">
+					<span class="label-input">Repeat Password</span>
+					<input id="repeat_password" class="input form_up_input" type="password" name="repeat-pass" placeholder="Repeat Your password">
+					<span class="focus-input"></span>
+				</div>
+				<div class="container-login-form-btn">
+					<div class="wrap-login-form-btn">
+						<div class="login-form-bgbtn"></div>
+						<input id="submit" class="login-form-btn submit-disabled" type="submit" value="Sign Up">
 					</div>
-
-					<div class="wrap-input validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<span class="label-input">Email</span>
-						<input class="input" type="email" name="email" placeholder="Email...">
-						<span class="focus-input"></span>
+					<a href="#" class="txt-link hov1">Sign in<i class="fa fa-long-arrow-right m-l"></i></a>
+				</div>
+			</form>
+			<form class="login-form validate-form" id="form-in">
+				<span class="login-form-title">Sign In</span>
+				<div class="wrap-input validate-input" data-validate="Username is required">
+					<span class="label-input">Username</span>
+					<input id="user_sign_in" class="input form_in_input" type="text" name="username" placeholder="Enter Your Username">
+					<span class="focus-input"></span>
+				</div>
+				<div class="wrap-input validate-input" data-validate = "Password is required">
+					<span class="label-input">Password</span>
+					<input class="input form_in_input" type="password" name="pass" placeholder="Enter password">
+					<span class="focus-input"></span>
+				</div>
+				<div class="container-login-form-btn">
+					<div class="wrap-login-form-btn">
+						<div class="login-form-bgbtn"></div>
+						<input class="login-form-btn" id="signin" type="submit" value="Sign In">
 					</div>
-
-					<div class="wrap-input validate-input" data-validate="Username is required">
-						<span class="label-input">Username</span>
-						<input class="input" type="text" name="username" placeholder="Username...">
-						<span class="focus-input"></span>
+					<a href="#" class="txt-link hov1">Sign up<i class="fa fa-long-arrow-right m-l"></i></a>
+				</div>
+			</form>
+			<div class="warning">
+				<div class="container-login">
+					<div class="login-more"></div>
+					<div class="wrap-login-warn">
+						<form class="login-form validate-form" id="form-in-warn">
+							<span class="login-form-title">WARNING ERROR</span>
+							<div class="wrap-input validate-input" data-validate="Username is required">
+								<span class="label-input">Unable to log in to your account. Verify that the username and password are entered correctly. Or register.</span>
+							</div>
+							<div class="container-login-form-btn">
+								<button class="warn-button" onclick="warnToggler()">TRY AGAIN</button>
+							</div>
+						</form>
 					</div>
-
-					<div class="wrap-input validate-input" data-validate = "Password is required">
-						<span class="label-input">Password</span>
-						<input class="input" type="password" name="pass" placeholder="*************">
-						<span class="focus-input"></span>
-					</div>
-
-					<div class="wrap-input validate-input" data-validate = "Repeat Password is required">
-						<span class="label-input">Repeat Password</span>
-						<input class="input" type="password" name="repeat-pass" placeholder="*************">
-						<span class="focus-input"></span>
-					</div>
-
-					<div class="container-login-form-btn">
-						<div class="wrap-login-form-btn">
-							<div class="login-form-bgbtn"></div>
-							<input class="login-form-btn" type="submit" value="Sign Up">
-						</div>
-
-						<a href="#" class="txt-link hov1">
-							Sign in
-							<i class="fa fa-long-arrow-right m-l"></i>
-						</a>
-					</div>
-				</form>
-				<form class="login-form validate-form" id="form-in">
-					<span class="login-form-title">
-						Sign In
-					</span>
-					<div class="wrap-input validate-input" data-validate="Username is required">
-						<span class="label-input">Username</span>
-						<input class="input" type="text" name="username" placeholder="Username...">
-						<span class="focus-input"></span>
-					</div>
-					<div class="wrap-input validate-input" data-validate = "Password is required">
-						<span class="label-input">Password</span>
-						<input class="input" type="password" name="pass" placeholder="*************">
-						<span class="focus-input"></span>
-					</div>
-					<div class="container-login-form-btn">
-						<div class="wrap-login-form-btn">
-							<div class="login-form-bgbtn"></div>
-							<input class="login-form-btn" type="submit" value="Sign In">
-						</div>
-
-						<a href="#" class="txt-link hov1">Sign up
-							<i class="fa fa-long-arrow-right m-l"></i>
-						</a>
-					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
