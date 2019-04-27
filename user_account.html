@@ -3,73 +3,150 @@
 <head>
 	<meta charset="UTF-8">
 	<title>#homework6</title>
-	<link rel="stylesheet" href="css/user_account.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<!--<script src="script.js"></script>-->
+	<link rel="stylesheet" href="css/player.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>    
+<script type="text/javascript" src="http://www.jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="http://www.jplayer.org/latest/dist/add-on/jplayer.playlist.min.js"></script>
 </head>
 <body>
-<!-- 		<header>
-			<div>
-			<div class="logo">logo</div>
-			<div class="tagline">tagline</div>
-			<div class="return">Back</div>
-			</div>
-		</header>
-		<div class="content">
-		<section id="one">
-			<div class="halloUser">Hello, what are you going to listen to today?</div>
-			<div class="mediaBlock"></div>
-		</section>
-		<section id="two">
-			<ul class="genresLidst"></ul>
-			<ul class="playList"></ul>
-		</section>
-		</div>
-		<footer>
-			<div class="chart">recomended</div>
-		</footer>
-	</div> -->
-<header>
-		<div class="logo">logo</div>
-		<div class="tagline">tagline</div>
-		<div class="return">Back</div>
-</header>
-<section>
-	<div class="blockOne">
-		<div class="subBlock1">Hello, what are you going to listen to today?</div>
-		<div class="subBlock2">mediaPlayer</div>
-	</div>
-	<div class="blockTwo">
-		<div class="subBlockTrack">
-			<ul>
-				<li>rock</li>
-				<li>pop</li>
-				<li>folk</li>
-				<li>core</li>
-				<li>rap</li>
-			</ul>
-		</div>
-		<div class="subBlockList">
-			<ul>
-				<li>Nirvana - rape me</li>
-				<li>Любэ - Конь</li>
-				<li>Круг - Владимирский централ	</li>
-			</ul>
-		</div>
-	</div>
-</section>
-<section class="chart">
-	<span>chart</span>
-	<div class="chart2">
-		<ul>
-			<li>Круг - Владимирский централ</li>
-			<li>Любэ - Конь</li>
-			<li>Nirvana - rape me</li>
-		</ul>
-	</div>
-</section>
+
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+        new jPlayerPlaylist({
+            jPlayer: "#jquery_jplayer_2",
+            cssSelectorAncestor: "#jp_container_2"
+        }, [
+        {
+            title:"Cro Magnon Man",
+            mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+        },
+        {
+            title:"Your Face",
+            mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+        },
+        {
+            title:"Cyber Sonnet",
+            mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+        },
+        {
+            title:"Tempered Song",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
+        },
+        {
+            title:"Hidden",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
+        },
+        {
+            title:"Lentement",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
+        },
+        {
+            title:"Lismore",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-04-Lismore.ogg"
+        },
+        {
+            title:"The Separation",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-05-The-separation.ogg"
+        },
+        {
+            title:"Beside Me",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-06-Beside-me.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-06-Beside-me.ogg"
+        },
+        {
+            title:"Bubble",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+        },
+        {
+            title:"Stirring of a Fool",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-08-Stirring-of-a-fool.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+        },
+        {
+            title:"Partir",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-09-Partir.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-09-Partir.ogg"
+        },
+        {
+            title:"Thin Ice",
+            mp3:"http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3",
+            oga:"http://www.jplayer.org/audio/ogg/Miaow-10-Thin-ice.ogg"
+        }
+        ], {
+            supplied: "oga, mp3",
+            wmode: "window",
+            useStateClassSkin: true,
+            autoBlur: false,
+            smoothPlayBar: true,
+            keyEnabled: true
+            
+        });    
+    });
+    
+</script>
+<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+<div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+    <div class="jp-type-playlist">
+        <div class="jp-gui jp-interface">
+            <div class="jp-row">        
+                <div class="jp-controls">
+                    <button class="jp-play" role="button" tabindex="0"><i class="fa fa-play"></i></button>
+                    <button class="jp-stop" role="button" tabindex="0"><i class="fa fa-stop"></i></button>
+                    <button class="jp-previous" role="button" tabindex="0"><i class="fa fa-backward"></i></button>
+                    <button class="jp-next" role="button" tabindex="0"><i class="fa fa-forward"></i></button>
+                </div>
+                <div class="jp-progress">
+                    <div class="jp-seek-bar">
+                        <div class="jp-play-bar"></div>
+                    </div>
+                    <div class="jp-time-holder">
+                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="jp-playlist">
+                        <ul>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>                
+                </div>        
+                <div class="jp-volume-controls">
+                    <button class="jp-mute" role="button" tabindex="0"><i class="fa fa-volume-down"></i></button>
+                    <div class="jp-volume-bar">
+                        <div class="jp-volume-bar-value"></div>
+                    </div>
+                    <button class="jp-volume-max" role="button" tabindex="0"><i class="fa fa-volume-up"></i></button>                
+                </div>
+                <div class="jp-toggles">
+                    <button class="jp-repeat" role="button" tabindex="0"><i class="fa fa-repeat"></i></button>
+                    <button class="jp-shuffle" role="button" tabindex="0"><i class="fa fa-random"></i></button>
+                </div>    
+            </div>    
+        </div>            
+        <div class="jp-no-solution">
+            Flash error
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 <footer>
-	<span>Copyright</span>
 </footer>
 </body>
 </html>
